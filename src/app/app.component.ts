@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Ripples';
+  siteName = 'Ripples';
   imiageUrl = "https://github.com/kluczka-l/angular-jpznfv/blob/master/src/assets/ripples.jpg?raw=true";
   
 }

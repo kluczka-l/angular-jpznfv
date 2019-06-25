@@ -1,3 +1,6 @@
 p {
   font-family: Lato;
 }
+.bgimg {
+    background-image: url('https://github.com/kluczka-l/angular-jpznfv/blob/master/src/assets/ripples.jpg?raw=true');
+}
