@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Ripples';
+  imiageUrl = "https://github.com/kluczka-l/angular-jpznfv/blob/master/src/assets/ripples.jpg?raw=true";
   
 }
