@@ -2,21 +2,25 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'k_card',
-  template: `<h1>{{k_card_title}}</h1>
-  <p>hello</p>
+  template: `<h1>{{cardTitleType}}</h1>
+  
   `,
   styles: [`h1 { font-family: Lato; }`]
 })
 export class KCardComponent  {
-  @Input() k_card_type: string;
-  k_card_title: string;
-  k_card_title = "K Card";
+  @Input() cardTitleType: string;
+ 
+ 
+  kCardTitle = "K Card";
 
-  selectCard() {
-  if ( k_card_type == "basic" ) {
-  k_card_title = "x";
+  update(val : string) {
+    this.cardTitleType = val;
+    console.log("From KCardComponent: " + this.cardTitleType)
+  if ( this.cardTitleType == "basic" ) {
+  this.kCardTitle = "Title Type basic";
   } else {
-    k_card_title = "y";
+    this.kCardTitle = "Title Type not basic";
   }
+
   }
 }
