@@ -1,6 +1,27 @@
-<div class="kard">
-<h1>{{kard.title}}</h1>
-<h3>{{kard.subTitle}}</h3>
-<p>{{kard.imageText}} <br> <img [src]="kard.imageUrl" width="50" height="50"></p>
-<p>{{kard.footer}}</p>
-</div>
+
+
+
+<mat-card class="kard">
+  <img mat-card-avatar [src]="kard.imageUrl" alt="">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{kard.title}}</mat-card-title>
+      <mat-card-subtitle>{{kard.subTitle}}</mat-card-subtitle>
+    </mat-card-title-group>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p>{{kard.imageText}} <br>
+    <img mat-card-md-image [src]="kard.imageUrl" alt="(_card_sm_image_)">
+  </mat-card-content>
+
+<mat-card-actions align='end'>
+  <mat-chip-list aria-label="Card data selection">
+  <mat-chip >Action 1</mat-chip>
+  <mat-chip color="primary" selected >Action 2</mat-chip>
+</mat-chip-list>
+</mat-card-actions>
+
+<mat-card-footer>{{kard.footer}}</mat-card-footer>
+ 
+</mat-card>

@@ -24,9 +24,9 @@
           (input)="kard1.subTitle=$event.target.value">
     </mat-form-field>
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Image Text" 
+      <textarea matInput placeholder="Description" 
           [value] = "kard1.imageText" 
-          (input)="kard1.imageText=$event.target.value">
+          (input)="kard1.imageText=$event.target.value"></textarea>
     </mat-form-field>
     <mat-form-field class="example-full-width">
       <input matInput placeholder="Image URL" 
@@ -39,9 +39,7 @@
           (input)="kard1.footer=$event.target.value">
     </mat-form-field>
 
-    <mat-form-field class="example-full-width">
-      <textarea matInput placeholder="Description"></textarea>
-    </mat-form-field>
+  
   
   </form>
 </div>
@@ -53,4 +51,6 @@
   <mat-chip color="primary" selected (click)="changeCard(1)">Change Card</mat-chip>
   <mat-chip color="accent" selected (click)="resetCard(1)">Reset Card</mat-chip>
 </mat-chip-list>
+
+
 </div>
