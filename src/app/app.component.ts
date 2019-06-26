@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   siteName = 'Ripples Angular';
-  imiageUrl = "https://github.com/kluczka-l/angular-jpznfv/blob/master/src/assets/ripples.jpg?raw=true";
+  image1Url = "https://github.com/kluczka-l/angular-jpznfv/blob/master/src/assets/ripples.jpg?raw=true";
+  image2Url = "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg";
 
   k_card_type_desired = "not basic";
   cardTitleTypeLocal = "basic";

@@ -4,9 +4,15 @@ p {
 .bgimg {
     background-image: url('https://github.com/kluczka-l/angular-jpznfv/blob/master/src/assets/ripples.jpg?raw=true');
 }
-.kard {
-  border: 1px solid rgb(25, 118, 210);
+.kardData {
+  border: 5px solid rgb(1, 6, 12);
   padding: 1rem;
   margin: 1rem 0;
-  background-color: #dae8f9;
+  background-color: #8e95a0;
+}
+.appContent {
+  border: 5px solid rgb(1, 6, 12);
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #3d4857;
 }

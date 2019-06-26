@@ -1,25 +1,41 @@
-
+<div class="appContent">
 <h1>Welcome To {{siteName}} Prototype</h1>
-<img src="https://github.com/kluczka-l/angular-jpznfv/blob/master/src/assets/ripples.jpg?raw=true" alt="Ripples" width="200" height="200">
+<h3>Version One</h3>
 
-<p>Version One</p>
-<div >
+
 <p>
   To Do:  Banner, Sidebar, Sidebar Options, Content For Each Option.
 </p>
-  <div> 
+
+<div class="kardData"> 
     Title Type Desired: <input type="text" 
     name="k_card_desired">
     <button (click)="changeCard()">Change Card</button>
-<br>
-<p></p>
+    <br>
+    <p></p>
     <input [value] = "cardTitleTypeLocal" (input)="update($event.target.value)"/> 
-<br>
-<div class="kard">
-<kard kardTitle="Card Title" 
-      kardSubTitle="Card Sub Title"
-      kardImage="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg"
-      kardFooter="Card Footer">
-</kard>
+    <br>
+
+
+
+
+
+
 </div>
+
+<kard kardTitle="Card 1 Title" 
+      kardSubTitle="Card 1 Sub Title"
+      kardImageText="Card Image Text"
+      [kardImage]="image1Url"
+      kardFooter="Card 1 Footer">
+</kard>
+
+<kard kardTitle="Card 2 Title" 
+      kardSubTitle="Card 2 Sub Title"
+      kardImageText="Card Image Text"
+      [kardImage]="image2Url"
+      kardFooter="Card 2 Footer">
+</kard>
+
+
 </div>
