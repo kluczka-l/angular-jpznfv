@@ -1,0 +1,24 @@
+
+<kard [title]="kard1.title" 
+      [subTitle]="kard1.subTitle" 
+      [imageText]="kard1.imageText"
+      [imageUrl]="kard1.imageUrl"
+      [footer]="kard1.footer">
+</kard>
+
+<kard [title]="kard2.title" 
+      [subTitle]="kard2.subTitle" 
+      [imageText]="kard2.imageText"
+      [imageUrl]="kard2.imageUrl"
+      [footer]="kard2.footer">
+</kard>
+
+<div class="kardData"> 
+    Title Type Desired: <input type="text" 
+    name="k_card_desired">
+    <button (click)="changeCard()">Change Card</button>
+    <br>
+    <p></p>
+    <input [value] = "cardTitleTypeLocal" (input)="update($event.target.value)"/> 
+    <br>
+</div>
