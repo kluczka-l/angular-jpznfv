@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { DemoMaterialModule } from './material-module';
 
 import { AppComponent } from './app.component';
 import { KardComponent } from './kard/kard.component';
@@ -14,6 +15,7 @@ import { AoiManagementComponent } from './aoi-management/aoi-management.componen
   imports:      [ 
     BrowserModule, 
     FormsModule,
+    DemoMaterialModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'cards', pathMatch: 'full', component: CardsComponent},

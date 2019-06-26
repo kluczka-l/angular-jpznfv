@@ -1,24 +1,63 @@
-
-<kard [title]="kard1.title" 
+<div class="card_container">
+  <div class="grid grid-pad">
+<kard class="col-1-4"
+      [title]="kard1.title" 
       [subTitle]="kard1.subTitle" 
       [imageText]="kard1.imageText"
       [imageUrl]="kard1.imageUrl"
       [footer]="kard1.footer">
 </kard>
-
-<kard [title]="kard2.title" 
+<kard class="col-1-4" 
+      [title]="kard2.title" 
       [subTitle]="kard2.subTitle" 
       [imageText]="kard2.imageText"
       [imageUrl]="kard2.imageUrl"
       [footer]="kard2.footer">
 </kard>
+<kard class="col-1-4" 
+      [title]="kard2.title" 
+      [subTitle]="kard2.subTitle" 
+      [imageText]="kard2.imageText"
+      [imageUrl]="kard2.imageUrl"
+      [footer]="kard2.footer">
+</kard>
+<kard class="col-1-4" 
+      [title]="kard2.title" 
+      [subTitle]="kard2.subTitle" 
+      [imageText]="kard2.imageText"
+      [imageUrl]="kard2.imageUrl"
+      [footer]="kard2.footer">
+</kard>
+<kard class="col-1-4" 
+      [title]="kard2.title" 
+      [subTitle]="kard2.subTitle" 
+      [imageText]="kard2.imageText"
+      [imageUrl]="kard2.imageUrl"
+      [footer]="kard2.footer">
+</kard>
+<kard class="col-1-4" 
+      [title]="kard2.title" 
+      [subTitle]="kard2.subTitle" 
+      [imageText]="kard2.imageText"
+      [imageUrl]="kard2.imageUrl"
+      [footer]="kard2.footer">
+</kard>
+</div>
+</div>
 
 <div class="kardData"> 
-    Title Type Desired: <input type="text" 
-    name="k_card_desired">
-    <button (click)="changeCard()">Change Card</button>
-    <br>
-    <p></p>
-    <input [value] = "cardTitleTypeLocal" (input)="update($event.target.value)"/> 
-    <br>
+  <h2>Parent Of Card 1</h2>
+<div>
+  
+  <label>Title</label><input [value] = "cardTitleTypeLocal" (input)="update($event.target.value)"/> 
+  <label>Sub Title</label><input [value] = "cardTitleTypeLocal" (input)="update($event.target.value)"/>
+</div>
+  <br> 
+  
+
+<mat-chip-list aria-label="Card data selection">
+  <mat-chip (click)="changeCard(1)">Clear Card"</mat-chip>
+  <mat-chip color="primary" selected (click)="changeCard(1)">Change Card</mat-chip>
+  <mat-chip color="accent" selected (click)="resetCard(1)">Reset Card</mat-chip>
+</mat-chip-list>
 </div>
