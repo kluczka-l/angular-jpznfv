@@ -12,11 +12,12 @@ export class KardComponent implements OnInit {
 @Input() imageUrl: string;
 @Input() footer: string;
 
-
-
   constructor() { 
+    this.title = "Tx";
     this.subTitle = "STx";
     this.imageText = "Ix";
+    this.imageUrl = "https://github.com/kluczka-l/angular-jpznfv/blob/master/src/assets/ripples.jpg?raw=true"
+    this.title = "Fx";
   }
 
   ngOnInit() {
