@@ -14,21 +14,30 @@
 <div>
   <form class="example-form">
     <mat-form-field class="example-full-width">
-      <input matInput 
-          placeholder="Title" 
-          [value] = "cardTitleTypeLocal" 
-          (input)="update($event.target.value)">
+      <input matInput placeholder="Title" 
+          [value] = "kard1.title" 
+          (input) = "kard1.title=$event.target.value">
     </mat-form-field>
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Sub Title" [value] = "cardTitleTypeLocal" (input)="update($event.target.value)">
+      <input matInput placeholder="Sub Title" 
+          [value] = "kard1.subTitle" 
+          (input)="kard1.subTitle=$event.target.value">
     </mat-form-field>
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Image Text" [value] = "cardTitleTypeLocal" (input)="update($event.target.value)">
+      <input matInput placeholder="Image Text" 
+          [value] = "kard1.imageText" 
+          (input)="kard1.imageText=$event.target.value">
     </mat-form-field>
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Footer" [value] = "cardTitleTypeLocal" (input)="update($event.target.value)">
+      <input matInput placeholder="Image URL" 
+          [value] = "kard1.imageUrl" 
+          (input)="kard1.imageUrl=$event.target.value">
     </mat-form-field>
-   
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Footer" 
+          [value] = "kard1.footer" 
+          (input)="kard1.footer=$event.target.value">
+    </mat-form-field>
 
     <mat-form-field class="example-full-width">
       <textarea matInput placeholder="Description"></textarea>
