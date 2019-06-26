@@ -7,19 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   siteName = 'Ripples Angular';
-  image1Url = "https://github.com/kluczka-l/angular-jpznfv/blob/master/src/assets/ripples.jpg?raw=true";
-  image2Url = "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg";
 
-  k_card_type_desired = "not basic";
-  cardTitleTypeLocal = "basic";
+  kard1 = { title: 'Card 1 Title',
+          subTitle: 'Card 1 Sub Title',
+          imageText: 'Card 1 Image Text',
+          imageUrl: "https://github.com/kluczka-l/angular-jpznfv/blob/master/src/assets/ripples.jpg?raw=true",
+          footer: "Card 1 Footer" };
 
-  changeCard() {
-    if ( this.cardTitleTypeLocal == "basic") {
-      this.cardTitleTypeLocal = "not basic";
-    } else {
-      this.cardTitleTypeLocal = "basic";
-    }
-    console.log(this.cardTitleTypeLocal)
-  }
-  
+  kard2 = { title: 'Card 2 Title',
+          subTitle: 'Card 2 Sub Title',
+          imageText: 'Card 2 Image Text',
+          imageUrl: "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg",
+          footer: "Card 2 Footer" };
+
 }

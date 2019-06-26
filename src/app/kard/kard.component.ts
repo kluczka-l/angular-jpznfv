@@ -6,17 +6,17 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./kard.component.css']
 })
 export class KardComponent implements OnInit {
-@Input() kardTitle: string;
-@Input() kardSubTitle: string;
-@Input() kardImageText: string;
-@Input() kardImage: string;
-@Input() kardFooter: string;
+@Input() title: string;
+@Input() subTitle: string;
+@Input() imageText: string;
+@Input() imageUrl: string;
+@Input() footer: string;
 
 
 
   constructor() { 
-    this.kardSubTitle = "STx";
-    this.kardImageText = "Ix";
+    this.subTitle = "STx";
+    this.imageText = "Ix";
   }
 
   ngOnInit() {
