@@ -1,9 +1,10 @@
-<div class="banner">
+<header>
+  <div class="container">
 <a [routerLink]="['/']" class="banner">
   <img [src]="bannerImageUrl" width="70" height="70"> 
   <h1>&nbsp;{{siteName}}</h1>
 </a>
-
+<nav>
 <ul>
   <li>
     <a routerLink= "">Home</a>
@@ -15,5 +16,7 @@
     <a routerLink="/aoi">AOI Management</a>
   </li>
 </ul>
+</nav>
 
 </div>
+</header>

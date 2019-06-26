@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { DemoMaterialModule } from './material-module';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { KardComponent } from './kard/kard.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -15,6 +15,7 @@ import { AoiManagementComponent } from './aoi-management/aoi-management.componen
   imports:      [ 
     BrowserModule, 
     FormsModule,
+    BrowserAnimationsModule,
     DemoMaterialModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },

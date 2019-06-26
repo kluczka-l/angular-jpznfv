@@ -1,11 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+import { Kard } from '../kard';
+
 @Component({
   selector: 'kard',
   templateUrl: './kard.component.html',
   styleUrls: ['./kard.component.css']
 })
 export class KardComponent implements OnInit {
+  @Input() kard: Kard;
 @Input() title: string;
 @Input() subTitle: string;
 @Input() imageText: string;
@@ -13,6 +16,7 @@ export class KardComponent implements OnInit {
 @Input() footer: string;
 
   constructor() { 
+  
     this.title = "Tx";
     this.subTitle = "STx";
     this.imageText = "Ix";

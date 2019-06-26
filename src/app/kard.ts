@@ -1,10 +1,18 @@
 export class Kard {
+  title: string;
+  subTitle: string;
+  imageText: string;
+  imageUrl: string;
+  footer: string;
   
-    id: number;
-    name: string;
-    constructor(id: number, name: string) {
-        this.id = id;
-        this.name = name;
+    constructor(title: string,
+                subTitle: string,
+                imageText: string,
+                imageUrl: string,
+                footer: string) {
+        this.title = title;
+        this.subTitle = subTitle;
+        this.imageUrl = imageUrl;
+        this.footer = footer;
     }
-    
 }
