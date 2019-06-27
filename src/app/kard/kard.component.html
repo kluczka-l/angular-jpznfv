@@ -22,6 +22,6 @@
 </mat-chip-list>
 </mat-card-actions>
 
-<mat-card-footer>{{kard.footer}}</mat-card-footer>
+<mat-card-footer *ngIf="kard.footer">{{kard.footer}}</mat-card-footer>
  
 </mat-card>

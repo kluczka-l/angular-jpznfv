@@ -7,14 +7,14 @@
       </a>
       <nav class="topbar-nav">
         <ul>
-          <li><a routerLink="/">Home</a></li>
-          <li><a routerLink="/cards">Apps</a></li>
-          <li><a routerLink="/aoi">AOI Management</a></li>
+          <li><a routerLink="/" title="Home Page">Home</a></li>
+          <li><a routerLink="/cards" title="Apps Page">Apps</a></li>
+          <li><a routerLink="/aoi" title="AOI Management Page">AOI Management</a></li>
         </ul>
       </nav>
   </mat-toolbar>
   <div class="canvas-container">
-    <mat-sidenav-container>
+    <mat-sidenav-container >
       <mat-sidenav #snav mode="side">
         <mat-nav-list>
           <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a>
