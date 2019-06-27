@@ -1,6 +1,6 @@
 
 .kardData {
-  border: 5px solid rgb(1, 6, 12);
+  border: 3px solid rgb(1, 6, 12);
   padding: 1rem;
   margin: 1rem 0;
   background-color: #8e95a0;
@@ -11,8 +11,8 @@
 }
 [class*='col-'] {
   float: left;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  padding-right: 12px;
+  padding-bottom: 12px;
 }
 [class*='col-']:last-of-type {
   padding-right: 0;

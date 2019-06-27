@@ -1,7 +1,5 @@
-
-
-
 <mat-card class="kard">
+  
   <img mat-card-avatar [src]="kard.imageUrl" alt="">
   <mat-card-header>
     <mat-card-title-group>
@@ -11,7 +9,7 @@
   </mat-card-header>
 
   <mat-card-content>
-    <p>{{kard.imageText}} <br>
+    <p *ngIf="kard.description">{{kard.description}}</p>
     <img mat-card-md-image [src]="kard.imageUrl" alt="(_card_sm_image_)">
   </mat-card-content>
 
