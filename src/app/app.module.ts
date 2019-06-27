@@ -6,7 +6,7 @@ import { DemoMaterialModule } from './material-module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { KardComponent } from './kard/kard.component';
-import { TopBarComponent } from './top-bar/top-bar.component';
+
 import { CardsComponent } from './cards/cards.component';
 import { HomeComponent } from './home/home.component';
 import { AoiManagementComponent } from './aoi-management/aoi-management.component';
@@ -22,7 +22,7 @@ import { AoiManagementComponent } from './aoi-management/aoi-management.componen
       { path: 'cards', pathMatch: 'full', component: CardsComponent},
       { path: 'aoi', pathMatch: 'full', component: AoiManagementComponent}
     ]) ],
-  declarations: [ AppComponent, KardComponent, TopBarComponent, CardsComponent, HomeComponent, AoiManagementComponent ],
+  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

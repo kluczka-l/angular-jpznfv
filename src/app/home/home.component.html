@@ -1,26 +1,25 @@
 <mat-sidenav-container class="example-container" >
-  <mat-sidenav #sidenav mode="side" [(opened)]="sidenavOpened">
+  <mat-sidenav #sidenav mode="side" [(opened)]="g_sidenavOpened">
     Side Bar Content Here
-    <p><button mat-button *ngIf="sidenavOpened" (click)="sidenav.toggle()">Hide</button></p>
+    <p><button mat-button *ngIf="g_sidenavOpened" (click)="sidenav.toggle()">Hide Side Bar</button></p>
   </mat-sidenav>
 
   <mat-sidenav-content>
     
-    
     <h1>Welcome!</h1>
     <ul>
       <li>Banner: In Progress</li>
-      <li>Sidebar: To Do</li>
+      <li>Sidebar: In Progress</li>
       <li>Content Pages:</li>
     <ul>
+      <li><a routerLink="/">Home Example:</a> In Progress</li>
       <li><a routerLink="/cards">Cards Example:</a> In Progress</li>
       <li><a routerLink="/aoi">AOI Management Page:</a> To Do</li>
       <li>Other Content Pages: To Do</li>
     </ul>
     </ul>
-    
 
-    <p><button mat-button *ngIf="!sidenavOpened" (click)="sidenav.toggle()">Show Side Bar</button></p>
+    <p><button mat-button *ngIf="!g_sidenavOpened" (click)="sidenav.toggle()">Show Side Bar</button></p>
   </mat-sidenav-content>
 </mat-sidenav-container>
   
