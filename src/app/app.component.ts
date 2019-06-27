@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   siteName = 'Ripples Angular';
-  g_sidenavOpened = true;
+ 
   topbarImageUrl = "https://github.com/kluczka-l/angular-jpznfv/blob/master/src/assets/ripples.jpg?raw=true";
   fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
-
 }

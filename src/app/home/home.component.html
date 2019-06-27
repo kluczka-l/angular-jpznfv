@@ -1,7 +1,7 @@
 <mat-sidenav-container  >
-  <mat-sidenav #sidenav mode="side" [(opened)]="g_sidenavOpened">
+  <mat-sidenav #sidenav mode="side" [(opened)]="localSidenavOpened">
     Side Bar Content Here
-    <p><button mat-button *ngIf="g_sidenavOpened" (click)="sidenav.toggle()">Hide Side Bar</button></p>
+    <p><button mat-button *ngIf="localSidenavOpened" (click)="sidenav.toggle()">Hide Local Side Bar</button></p>
   </mat-sidenav>
 
   <mat-sidenav-content>
@@ -19,7 +19,6 @@
         </ul>
     </ul>
 
-    <p><button mat-button *ngIf="!g_sidenavOpened" (click)="sidenav.toggle()">Show Side Bar</button></p>
+    <p><button mat-button *ngIf="!localSidenavOpened" (click)="sidenav.toggle()">Show Local Side Bar</button></p>
   </mat-sidenav-content>
 </mat-sidenav-container>
-  
