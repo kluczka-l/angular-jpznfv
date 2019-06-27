@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   @Input() siteName: string;
+  sidenavOpened = true;
 
   constructor() { }
 

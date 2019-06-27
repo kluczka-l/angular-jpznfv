@@ -1,13 +1,26 @@
-<h1>
-Welcome!
-</h1>
-<ul>
-  <li>Banner: In Progress</li>
-  <li>Sidebar: To Do</li>
-  <li>Content Pages:
+<mat-sidenav-container class="example-container" >
+  <mat-sidenav #sidenav mode="side" [(opened)]="sidenavOpened">
+    Side Bar Content Here
+    <p><button mat-button *ngIf="sidenavOpened" (click)="sidenav.toggle()">Hide</button></p>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    
+    
+    <h1>Welcome!</h1>
+    <ul>
+      <li>Banner: In Progress</li>
+      <li>Sidebar: To Do</li>
+      <li>Content Pages:</li>
     <ul>
       <li><a routerLink="/cards">Cards Example:</a> In Progress</li>
       <li><a routerLink="/aoi">AOI Management Page:</a> To Do</li>
       <li>Other Content Pages: To Do</li>
     </ul>
-  </li>
+    </ul>
+    
+
+    <p><button mat-button *ngIf="!sidenavOpened" (click)="sidenav.toggle()">Show Side Bar</button></p>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+  
