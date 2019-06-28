@@ -9,48 +9,48 @@
   </div>
 </div>
 
-<div class="kardData"> 
+<div class="kardForm"> 
   <h2>Parent Of Card 1</h2>
 <div>
-  <form class="example-form">
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="Title" 
+  <form #kardFormData="ngForm" class="example-form">
+    <mat-form-field class="example-full-width" >
+      <input matInput placeholder="Title"  name="kardTitle" ngModel
           [value] = "kard1.title" 
           (input) = "kard1.title=$event.target.value">
     </mat-form-field>
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Sub Title" 
+      <input matInput placeholder="Sub Title" name="kardSubTitle" ngModel
           [value] = "kard1.subTitle" 
           (input)="kard1.subTitle=$event.target.value">
     </mat-form-field>
     <mat-form-field class="example-full-width">
-      <textarea matInput placeholder="Description" 
+      <textarea matInput placeholder="Description" name="kardDescription" ngModel
           [value] = "kard1.description" 
           (input)="kard1.description=$event.target.value"></textarea>
     </mat-form-field>
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Image URL" 
+      <input matInput placeholder="Image URL" name="kardImageUrl" ngModel
           [value] = "kard1.imageUrl" 
           (input)="kard1.imageUrl=$event.target.value">
     </mat-form-field>
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Footer" 
+      <input matInput placeholder="Footer" name="kardFooter" ngModel
           [value] = "kard1.footer" 
           (input)="kard1.footer=$event.target.value">
     </mat-form-field>
 
-  
+    <p>Form Valid?: {{kardFormData.valid}}</p>
+    <p>Form Touched?: {{kardFormData.touched}}</p>
+    <p>Form Data: {{kardFormData.value | json}}</p>
+   
+
+     <mat-chip-list aria-label="Card data selection">
+  <mat-chip (click)="clearCard(kardForm)">Clear Card</mat-chip>
+  <mat-chip color="primary" selected (click)="changeCard(kardForm)">Change Card</mat-chip>
+  <mat-chip color="accent" selected (click)="resetCard(kardForm)">Reset Card</mat-chip>
+</mat-chip-list>
   
   </form>
 </div>
-  <br> 
-  
-
-<mat-chip-list aria-label="Card data selection">
-  <mat-chip (click)="changeCard(1)">Clear Card</mat-chip>
-  <mat-chip color="primary" selected (click)="changeCard(1)">Change Card</mat-chip>
-  <mat-chip color="accent" selected (click)="resetCard(1)">Reset Card</mat-chip>
-</mat-chip-list>
-
 
 </div>

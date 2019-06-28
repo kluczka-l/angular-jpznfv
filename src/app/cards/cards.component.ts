@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'cards',
@@ -21,6 +22,13 @@ kard2 = { title: 'App 2 Title',
   constructor() { }
 
   ngOnInit() {
+  }
+
+  clearCard(f: NgForm) {
+
+
+    window.alert("hello" );
+
   }
 
 }
