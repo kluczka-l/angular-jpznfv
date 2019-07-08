@@ -44,6 +44,26 @@
     </div>
   </div>
 
+<div>
+  <h3>2. PICKLIST</h3>
+  <p>Description...</p>
+    
+  <div class="demoItem">
+      <div>
+        Pick your favorite hero
+        (<label><input type="checkbox" checked (change)="showSad = !showSad">show sad</label>)
+      </div>
+      <select [(ngModel)]="hero">
+      <ng-container *ngFor="let h of heroes">
+       <ng-container *ngIf="showSad || h.emotion !== 'sad'">
+        <option [ngValue]="h">{{h.name}} ({{h.emotion}})</option>
+        </ng-container>
+      </ng-container>
+      </select>
+  </div>
+</div>
+
+
 </div>
 
   </mat-sidenav-content>

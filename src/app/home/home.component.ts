@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   localSidenavOpened = true;
   highlightColor: string;
   displayDemoStuff = false;
+  showSad: boolean = false;
 
   constructor() { }
 
