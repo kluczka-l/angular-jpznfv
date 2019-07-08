@@ -16,8 +16,8 @@ body {
   float: right;
 }
 
-/* Tob Bar */
-.topbar-nav {
+/* Top Bar */
+nav.topbar-nav {
         justify-self: right;
     
         ul {
@@ -25,7 +25,7 @@ body {
             margin: 0; padding: 0;
 
             li {
-                float: left;
+                float: right;
 
                 a {
                     padding: 1.5em;

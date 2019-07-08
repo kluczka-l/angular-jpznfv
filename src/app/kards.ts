@@ -11,4 +11,3 @@ export const kards = [
           imageUrl: "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg",
           footer: "" }
 ];
-
