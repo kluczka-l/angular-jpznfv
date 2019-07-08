@@ -29,7 +29,7 @@
   <p><button mat-button *ngIf="displayDemoStuff" (click)="hideDemoStuff()">Hide Demo Stuff</button></p>
     
   <div>
-    <h3>1. HIGHLIGHT ON HOVER</h3>
+    <h3><span class="badge">1.</span> HIGHLIGHT ON HOVER</h3>
     <p>Highlighting of text on hover provided by an Attributue Directive defined in another NgModule where the highlight color is provided by the calling component.</p>
     
     <div class="demoItem">
@@ -45,8 +45,8 @@
   </div>
 
 <div>
-  <h3>2. PICKLIST</h3>
-  <p>Description...</p>
+  <h3><span class="badge">2.</span> PICKLIST</h3>
+  <p>Pick list filtered by attribute 'emotion' of the list item.</p>
     
   <div class="demoItem">
       <div>
@@ -55,14 +55,14 @@
       </div>
       <select [(ngModel)]="hero">
       <ng-container *ngFor="let h of heroes">
-       <ng-container *ngIf="showSad || h.emotion !== 'sad'">
+       <ng-container *ngIf="!showSad || h.emotion !== 'sad'">
         <option [ngValue]="h">{{h.name}} ({{h.emotion}})</option>
         </ng-container>
       </ng-container>
       </select>
+      <p>Selected Item = {{ hero ? hero.name : 'No one yet' }} </p>
   </div>
 </div>
-
 
 </div>
 
