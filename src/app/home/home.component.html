@@ -20,29 +20,14 @@
     </ul>
 
     <p><button mat-button *ngIf="!localSidenavOpened" (click)="sidenav.toggle()">Show Local Side Bar</button></p>
-
     <p><button mat-button *ngIf="!displayDemoStuff" (click)="showDemoStuff()">Show Demo Stuff</button></p>
 
 <div *ngIf="displayDemoStuff">
-<p>____________________________________________</p>
-<h2>DEMO STUFF</h2>
-<p><button mat-button *ngIf="displayDemoStuff" (click)="hideDemoStuff()">Hide Demo Stuff</button></p>
-    
-  <div>
-    <h3>1. HIGHLIGHT ON HOVER</h3>
-    <p>Highlighting of text on hover provided by an Attributue Directive defined in another NgModule where the highlight color is provided by the calling component.</p>
-    
-    <div class="demoItem">
-      <h4>Pick a highlight color</h4>
-      <div>
-        <input type="radio" name="colors" (click)="highlightColor='lightgreen'">Green
-        <input type="radio" name="colors" (click)="highlightColor='yellow'">Yellow
-        <input type="radio" name="colors" (click)="highlightColor='cyan'">Cyan
-      </div>
-      <p [elmHighlight]="highlightColor">HIGHLIGHT ON HOVER TEXT</p>
-    </div>
-  </div>
 
+  <p>____________________________________________</p>
+  <h2>DEMO STUFF</h2>
+  <p><button mat-button *ngIf="displayDemoStuff" (click)="hideDemoStuff()">Hide Demo Stuff</button></p>
+    
   <div>
     <h3>1. HIGHLIGHT ON HOVER</h3>
     <p>Highlighting of text on hover provided by an Attributue Directive defined in another NgModule where the highlight color is provided by the calling component.</p>
@@ -55,6 +40,7 @@
         <input type="radio" name="colors" (click)="highlightColor='cyan'">Cyan
       </div>
       <p [elmHighlight]="highlightColor">HIGHLIGHT ON HOVER TEXT</p>
+      <p [elmHighlight]="highlightColor" defaultColor="violet">HIGHLIGHT ON HOVER TEXT (has hard-coded caller specified default)</p>
     </div>
   </div>
 

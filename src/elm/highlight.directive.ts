@@ -5,11 +5,12 @@ import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 })
 export class HighlightDirectiveFromElm {
   @Input("elmHighlight") highlightColor: string;
+  @Input() defaultColor: string;
 
     constructor(private el: ElementRef) { }
 
   @HostListener('mouseenter') onMouseEnter() {
-    this.highlight(this.highlightColor);
+    this.highlight(this.highlightColor || this.defaultColor || 'red');
     //window.alert("mouseEnter, color =" + this.highlightColor)
   }
   @HostListener('mouseleave') onMouseLeave() {
