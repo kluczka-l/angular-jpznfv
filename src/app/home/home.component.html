@@ -28,11 +28,12 @@
 <h2>DEMO STUFF</h2>
 <p><button mat-button *ngIf="displayDemoStuff" (click)="hideDemoStuff()">Hide Demo Stuff</button></p>
     
-<div>
+  <div>
     <h3>1. HIGHLIGHT ON HOVER</h3>
     <p>Highlighting of text on hover provided by an Attributue Directive defined in another NgModule where the highlight color is provided by the calling component.</p>
-    <h4>Pick a highlight color</h4>
-    <div>
+    
+    <div class="demoItem">
+      <h4>Pick a highlight color</h4>
       <div>
         <input type="radio" name="colors" (click)="highlightColor='lightgreen'">Green
         <input type="radio" name="colors" (click)="highlightColor='yellow'">Yellow
@@ -41,6 +42,22 @@
       <p [elmHighlight]="highlightColor">HIGHLIGHT ON HOVER TEXT</p>
     </div>
   </div>
+
+  <div>
+    <h3>1. HIGHLIGHT ON HOVER</h3>
+    <p>Highlighting of text on hover provided by an Attributue Directive defined in another NgModule where the highlight color is provided by the calling component.</p>
+    
+    <div class="demoItem">
+      <h4>Pick a highlight color</h4>
+      <div>
+        <input type="radio" name="colors" (click)="highlightColor='lightgreen'">Green
+        <input type="radio" name="colors" (click)="highlightColor='yellow'">Yellow
+        <input type="radio" name="colors" (click)="highlightColor='cyan'">Cyan
+      </div>
+      <p [elmHighlight]="highlightColor">HIGHLIGHT ON HOVER TEXT</p>
+    </div>
+  </div>
+
 </div>
 
   </mat-sidenav-content>
