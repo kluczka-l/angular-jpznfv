@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   siteName = 'Ripples Angular';
+  
  
   topbarImageUrl = "https://github.com/kluczka-l/angular-jpznfv/blob/master/src/assets/ripples.jpg?raw=true";
   
