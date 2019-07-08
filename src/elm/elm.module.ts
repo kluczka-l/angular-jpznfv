@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HighlightDirective } from './highlight.directive';
+
+import { HighlightDirectiveFromElm } from './highlight.directive';
 
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [HighlightDirective]
+  declarations: [HighlightDirectiveFromElm],
+  exports: [HighlightDirectiveFromElm],
 })
 export class ElmModule { }
