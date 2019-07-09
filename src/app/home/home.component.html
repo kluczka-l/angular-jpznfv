@@ -27,12 +27,17 @@
   <p>____________________________________________</p>
   <h2>DEMO STUFF</h2>
   <p><button mat-button *ngIf="displayDemoStuff" (click)="hideDemoStuff()">Hide Demo Stuff</button></p>
-    
-  <div>
-    <h3><span class="badge">1.</span> HIGHLIGHT ON HOVER</h3>
-    <p>Highlighting of text on hover provided by an Attributue Directive defined in another NgModule where the highlight color is provided by the calling component.</p>
-    
-    <div class="demoItem">
+
+<ul>
+  <li class="demoItem1"><span class="badge">MATERIAL CHECKBOX:</span> Angular Material Checkbox Example:
+    <p >
+      <mat-checkbox>Check me!</mat-checkbox>
+    </p>
+  </li>
+  <br>
+
+  <li class="demoItem2"><span class="badge">HIGHLIGHT ON HOVER:</span> Highlighting of text on hover provided by an Attributue Directive defined in another NgModule where the highlight color is provided by the calling component.
+    <div >
       <h4>Pick a highlight color</h4>
       <div>
         <input type="radio" name="colors" (click)="highlightColor='lightgreen'">Green
@@ -42,17 +47,16 @@
       <p [elmHighlight]="highlightColor">HIGHLIGHT ON HOVER TEXT</p>
       <p [elmHighlight]="highlightColor" defaultColor="violet">HIGHLIGHT ON HOVER TEXT (has hard-coded caller specified default)</p>
     </div>
-  </div>
-
-<div>
-  <h3><span class="badge">2.</span> PICKLIST</h3>
-  <p>Pick list filtered by attribute 'emotion' of the list item.</p>
-    
-  <div class="demoItem">
+    </li>
+    <br>
+    <li class="demoItem1"><span class="badge">PICKLIST:</span> Pick list filtered by attribute 'emotion' of the list item.
+      <div >
       <div>
         Pick your favorite hero
         (<label><input type="checkbox" checked (change)="showSad = !showSad">show sad</label>)
+       
       </div>
+  
       <select [(ngModel)]="hero">
       <ng-container *ngFor="let h of heroes">
        <ng-container *ngIf="!showSad || h.emotion !== 'sad'">
@@ -61,10 +65,19 @@
       </ng-container>
       </select>
       <p>Selected Item = {{ hero ? hero.name : 'No one yet' }} </p>
-  </div>
-</div>
+    </div>
+
+
+
+
+
+
+    </li>
+</ul>
+
+  
+
 
 </div>
-
   </mat-sidenav-content>
 </mat-sidenav-container>
