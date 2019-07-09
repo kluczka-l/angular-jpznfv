@@ -1,7 +1,7 @@
-<mat-sidenav-container  >
-  <mat-sidenav #sidenav mode="side" [(opened)]="localSidenavOpened">
-    Side Bar Content Here
-    <p><button mat-button *ngIf="localSidenavOpened" (click)="sidenav.toggle()">Hide Local Side Bar</button></p>
+<mat-sidenav-container>
+	<mat-sidenav #sidenav mode="side" [(opened)]="localSidenavOpened">
+		Side Bar Content Here
+		<p><button mat-button *ngIf="localSidenavOpened" (click)="sidenav.toggle()">Hide Local Side Bar</button></p>
   </mat-sidenav>
 
   <mat-sidenav-content>
@@ -36,9 +36,44 @@
   </li>
   <br>
 
+<li class="demoItem2"><span class="badge">RADIO BUTTON: </span> Angular Material Radio Button Example.
+    <p>
+  <mat-radio-group aria-label="Select an option">
+  <mat-radio-button value="1">Option 1</mat-radio-button>
+  <mat-radio-button value="2">Option 2</mat-radio-button>
+</mat-radio-group>
+</p>
+  </li>
+  <br>
+  <li class="demoItem1"><span class="badge">DATE PICKER: </span> Angular Material Date Picker Example.
+    <p> <mat-form-field>
+  <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field> </p>
+  </li>
+  <br>
+
+<li class="demoItem1"><span class="badge">SLIDERS: </span> Angular Material Slider Examples.  **REQUIRES HAMMER.JS **
+    <p><mat-slider></mat-slider></p>
+    <p><mat-slider tickInterval="auto"></mat-slider></p>
+    <p> <mat-slider
+  thumbLabel
+  [displayWith]="formatLabel"
+  tickInterval="1000"
+  min="1"
+  max="10000"></mat-slider> </p>
+
+  
+  </li>
+  <br>
+
+
+
+
   <li class="demoItem2"><span class="badge">HIGHLIGHT ON HOVER:</span> Highlighting of text on hover provided by an Attributue Directive defined in another NgModule where the highlight color is provided by the calling component.
     <div >
-      <h4>Pick a highlight color</h4>
+      <h4>Examine default highlights then pick a highlight color</h4>
       <div>
         <input type="radio" name="colors" (click)="highlightColor='lightgreen'">Green
         <input type="radio" name="colors" (click)="highlightColor='yellow'">Yellow
