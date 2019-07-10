@@ -21,6 +21,11 @@ import { MaterialDatePickerDemoComponent } from './material-date-picker-demo/mat
 
 
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { NgxDemoComponent } from './ngx-demo/ngx-demo.component';
+import { NgxButtonDemoComponent } from './ngx-button-demo/ngx-button-demo.component';
+import { NgxDataPickerDemoComponent } from './ngx-data-picker-demo/ngx-data-picker-demo.component';
+import { NgxCheckboxDemoComponent } from './ngx-checkbox-demo/ngx-checkbox-demo.component';
+import { NgxRadioButtonDemoComponent } from './ngx-radio-button-demo/ngx-radio-button-demo.component';
 
 @NgModule({
   imports:      [ 
@@ -40,8 +45,14 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
       { path: 'app-material-button-demo', pathMatch: 'full', component: MaterialButtonDemoComponent},
       { path: 'app-material-radio-button-demo', pathMatch: 'full', component: MaterialRadioButtonDemoComponent},
       { path: 'app-material-date-picker-demo', pathMatch: 'full', component: MaterialDatePickerDemoComponent},
+
+      { path: 'ngxd', pathMatch: 'full', component: NgxDemoComponent},
+      { path: 'app-ngx-checkbox-demo', pathMatch: 'full', component: NgxCheckboxDemoComponent},
+      { path: 'app-ngx-button-demo', pathMatch: 'full', component: NgxButtonDemoComponent},
+      { path: 'app-ngx-radio-button-demo', pathMatch: 'full', component: NgxRadioButtonDemoComponent},
+      { path: 'app-ngx-date-picker-demo', pathMatch: 'full', component: NgxDataPickerDemoComponent},
     ]) ],
-  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent, MaterialCheckboxDemoComponent, MaterialButtonDemoComponent, MaterialRadioButtonDemoComponent, MaterialDatePickerDemoComponent ],
+  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent, MaterialCheckboxDemoComponent, MaterialButtonDemoComponent, MaterialRadioButtonDemoComponent, MaterialDatePickerDemoComponent, NgxDemoComponent, NgxButtonDemoComponent, NgxDataPickerDemoComponent, NgxCheckboxDemoComponent, NgxRadioButtonDemoComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
