@@ -15,6 +15,9 @@ import { AoiManagementComponent } from './aoi-management/aoi-management.componen
 import { MaterialDemoComponent } from './material-demo/material-demo.component';
 import { MaterialDesignInfoComponent } from './material-design-info/material-design-info.component';
 import { MaterialCheckboxDemoComponent } from './material-checkbox-demo/material-checkbox-demo.component';
+import { MaterialButtonDemoComponent } from './material-button-demo/material-button-demo.component';
+import { MaterialRadioButtonDemoComponent } from './material-radio-button-demo/material-radio-button-demo.component';
+import { MaterialDatePickerDemoComponent } from './material-date-picker-demo/material-date-picker-demo.component';
 
 @NgModule({
   imports:      [ 
@@ -30,8 +33,11 @@ import { MaterialCheckboxDemoComponent } from './material-checkbox-demo/material
       { path: 'amd', pathMatch: 'full', component: MaterialDemoComponent},
       { path: 'mdi', pathMatch: 'full', component: MaterialDesignInfoComponent},
       { path: 'app-material-checkbox-demo', pathMatch: 'full', component: MaterialCheckboxDemoComponent},
+      { path: 'app-material-button-demo', pathMatch: 'full', component: MaterialButtonDemoComponent},
+      { path: 'app-material-radio-button-demo', pathMatch: 'full', component: MaterialRadioButtonDemoComponent},
+      { path: 'app-material-date-picker-demo', pathMatch: 'full', component: MaterialDatePickerDemoComponent},
     ]) ],
-  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent, MaterialCheckboxDemoComponent ],
+  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent, MaterialCheckboxDemoComponent, MaterialButtonDemoComponent, MaterialRadioButtonDemoComponent, MaterialDatePickerDemoComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
