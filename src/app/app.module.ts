@@ -12,6 +12,7 @@ import { KardComponent } from './kard/kard.component';
 import { CardsComponent } from './cards/cards.component';
 import { HomeComponent } from './home/home.component';
 import { AoiManagementComponent } from './aoi-management/aoi-management.component';
+import { MaterialDemoComponent } from './material-demo/material-demo.component';
 
 @NgModule({
   imports:      [ 
@@ -23,9 +24,10 @@ import { AoiManagementComponent } from './aoi-management/aoi-management.componen
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'cards', pathMatch: 'full', component: CardsComponent},
-      { path: 'aoi', pathMatch: 'full', component: AoiManagementComponent}
+      { path: 'aoi', pathMatch: 'full', component: AoiManagementComponent},
+      { path: 'amd', pathMatch: 'full', component: MaterialDemoComponent},
     ]) ],
-  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent ],
+  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
