@@ -27,7 +27,8 @@ import { NgxDataPickerDemoComponent } from './ngx-data-picker-demo/ngx-data-pick
 import { NgxCheckboxDemoComponent } from './ngx-checkbox-demo/ngx-checkbox-demo.component';
 import { NgxRadioButtonDemoComponent } from './ngx-radio-button-demo/ngx-radio-button-demo.component';
 import { DemosComponent } from './demos/demos.component';
-import { NgxSpinnerDemoComponent } from './ngx-spinner-demo/ngx-spinner-demo.component';
+
+import { NgxSpinner1DemoComponent } from './ngx-spinner1-demo/ngx-spinner1-demo.component';
 
 @NgModule({
   imports:      [ 
@@ -56,9 +57,9 @@ import { NgxSpinnerDemoComponent } from './ngx-spinner-demo/ngx-spinner-demo.com
       { path: 'app-ngx-radio-button-demo', pathMatch: 'full', component: NgxRadioButtonDemoComponent},
       { path: 'app-ngx-date-picker-demo', pathMatch: 'full', component: NgxDataPickerDemoComponent},
 
-      { path: 'app-ngx-spinner-demo', pathMatch: 'full', component: NgxSpinnerDemoComponent},
+      { path: 'app-ngx-spinner1-demo', pathMatch: 'full', component: NgxSpinner1DemoComponent},
     ]) ],
-  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent, MaterialCheckboxDemoComponent, MaterialButtonDemoComponent, MaterialRadioButtonDemoComponent, MaterialDatePickerDemoComponent, NgxDemoComponent, NgxButtonDemoComponent, NgxDataPickerDemoComponent, NgxCheckboxDemoComponent, NgxRadioButtonDemoComponent, DemosComponent, NgxSpinnerDemoComponent ],
+  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent, MaterialCheckboxDemoComponent, MaterialButtonDemoComponent, MaterialRadioButtonDemoComponent, MaterialDatePickerDemoComponent, NgxDemoComponent, NgxButtonDemoComponent, NgxDataPickerDemoComponent, NgxCheckboxDemoComponent, NgxRadioButtonDemoComponent, DemosComponent, NgxSpinner1DemoComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
