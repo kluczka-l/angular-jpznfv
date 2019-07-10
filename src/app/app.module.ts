@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { AoiManagementComponent } from './aoi-management/aoi-management.component';
 import { MaterialDemoComponent } from './material-demo/material-demo.component';
 import { MaterialDesignInfoComponent } from './material-design-info/material-design-info.component';
+import { MaterialCheckboxDemoComponent } from './material-checkbox-demo/material-checkbox-demo.component';
 
 @NgModule({
   imports:      [ 
@@ -28,8 +29,9 @@ import { MaterialDesignInfoComponent } from './material-design-info/material-des
       { path: 'aoi', pathMatch: 'full', component: AoiManagementComponent},
       { path: 'amd', pathMatch: 'full', component: MaterialDemoComponent},
       { path: 'mdi', pathMatch: 'full', component: MaterialDesignInfoComponent},
+      { path: 'app-material-checkbox-demo', pathMatch: 'full', component: MaterialCheckboxDemoComponent},
     ]) ],
-  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent ],
+  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent, MaterialCheckboxDemoComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

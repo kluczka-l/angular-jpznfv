@@ -150,3 +150,17 @@ mat-sidenav {
   // use our theme with angular-material-theme mixin
   @include angular-material-theme($my-theme);
 }
+.materialDemoItem {
+  display: inline-block;
+  font-size: medium;
+  color: black;
+  
+  background-color:#dde1e6;
+  line-height: 1.25em;
+  position: relative;
+  
+  width: 80%;
+  margin: 0 .8em 1em 0;
+  padding: 0.4em 0.2em 0.4em 0.7em;
+  border-radius: 4px 0 0 4px;
+}
