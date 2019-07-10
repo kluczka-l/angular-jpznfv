@@ -13,6 +13,7 @@ import { CardsComponent } from './cards/cards.component';
 import { HomeComponent } from './home/home.component';
 import { AoiManagementComponent } from './aoi-management/aoi-management.component';
 import { MaterialDemoComponent } from './material-demo/material-demo.component';
+import { MaterialDesignInfoComponent } from './material-design-info/material-design-info.component';
 
 @NgModule({
   imports:      [ 
@@ -26,8 +27,9 @@ import { MaterialDemoComponent } from './material-demo/material-demo.component';
       { path: 'cards', pathMatch: 'full', component: CardsComponent},
       { path: 'aoi', pathMatch: 'full', component: AoiManagementComponent},
       { path: 'amd', pathMatch: 'full', component: MaterialDemoComponent},
+      { path: 'mdi', pathMatch: 'full', component: MaterialDesignInfoComponent},
     ]) ],
-  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent ],
+  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
