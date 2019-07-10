@@ -26,6 +26,8 @@ import { NgxButtonDemoComponent } from './ngx-button-demo/ngx-button-demo.compon
 import { NgxDataPickerDemoComponent } from './ngx-data-picker-demo/ngx-data-picker-demo.component';
 import { NgxCheckboxDemoComponent } from './ngx-checkbox-demo/ngx-checkbox-demo.component';
 import { NgxRadioButtonDemoComponent } from './ngx-radio-button-demo/ngx-radio-button-demo.component';
+import { DemosComponent } from './demos/demos.component';
+import { NgxSpinnerDemoComponent } from './ngx-spinner-demo/ngx-spinner-demo.component';
 
 @NgModule({
   imports:      [ 
@@ -39,6 +41,8 @@ import { NgxRadioButtonDemoComponent } from './ngx-radio-button-demo/ngx-radio-b
       { path: '', component: HomeComponent },
       { path: 'cards', pathMatch: 'full', component: CardsComponent},
       { path: 'aoi', pathMatch: 'full', component: AoiManagementComponent},
+      { path: 'demos', pathMatch: 'full', component: DemosComponent},
+
       { path: 'amd', pathMatch: 'full', component: MaterialDemoComponent},
       { path: 'mdi', pathMatch: 'full', component: MaterialDesignInfoComponent},
       { path: 'app-material-checkbox-demo', pathMatch: 'full', component: MaterialCheckboxDemoComponent},
@@ -46,13 +50,15 @@ import { NgxRadioButtonDemoComponent } from './ngx-radio-button-demo/ngx-radio-b
       { path: 'app-material-radio-button-demo', pathMatch: 'full', component: MaterialRadioButtonDemoComponent},
       { path: 'app-material-date-picker-demo', pathMatch: 'full', component: MaterialDatePickerDemoComponent},
 
-      { path: 'ngxd', pathMatch: 'full', component: NgxDemoComponent},
+      { path: 'ngxb', pathMatch: 'full', component: NgxDemoComponent},
       { path: 'app-ngx-checkbox-demo', pathMatch: 'full', component: NgxCheckboxDemoComponent},
       { path: 'app-ngx-button-demo', pathMatch: 'full', component: NgxButtonDemoComponent},
       { path: 'app-ngx-radio-button-demo', pathMatch: 'full', component: NgxRadioButtonDemoComponent},
       { path: 'app-ngx-date-picker-demo', pathMatch: 'full', component: NgxDataPickerDemoComponent},
+
+      { path: 'app-ngx-spinner-demo', pathMatch: 'full', component: NgxSpinnerDemoComponent},
     ]) ],
-  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent, MaterialCheckboxDemoComponent, MaterialButtonDemoComponent, MaterialRadioButtonDemoComponent, MaterialDatePickerDemoComponent, NgxDemoComponent, NgxButtonDemoComponent, NgxDataPickerDemoComponent, NgxCheckboxDemoComponent, NgxRadioButtonDemoComponent ],
+  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent, MaterialCheckboxDemoComponent, MaterialButtonDemoComponent, MaterialRadioButtonDemoComponent, MaterialDatePickerDemoComponent, NgxDemoComponent, NgxButtonDemoComponent, NgxDataPickerDemoComponent, NgxCheckboxDemoComponent, NgxRadioButtonDemoComponent, DemosComponent, NgxSpinnerDemoComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

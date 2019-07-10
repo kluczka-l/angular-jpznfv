@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ngxd',
+  selector: 'ngxb',
   templateUrl: './ngx-demo.component.html',
   styleUrls: ['./ngx-demo.component.css']
 })
