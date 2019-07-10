@@ -19,10 +19,14 @@ import { MaterialButtonDemoComponent } from './material-button-demo/material-but
 import { MaterialRadioButtonDemoComponent } from './material-radio-button-demo/material-radio-button-demo.component';
 import { MaterialDatePickerDemoComponent } from './material-date-picker-demo/material-date-picker-demo.component';
 
+
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
+
 @NgModule({
   imports:      [ 
     BrowserModule, 
     FormsModule,
+    ButtonsModule.forRoot(),
     BrowserAnimationsModule,
     ElmModule,
     DemoMaterialModule,

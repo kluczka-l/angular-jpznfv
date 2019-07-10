@@ -20,28 +20,18 @@
         </ul>
     </ul>
 
-    <p><button mat-button *ngIf="!localSidenavOpened" (click)="sidenav.toggle()">Show Local Side Bar</button></p>
-    <p><button mat-button *ngIf="!displayDemoStuff" (click)="showDemoStuff()">Show Demo Stuff</button></p>
+    <p><button mat-raised-button *ngIf="!localSidenavOpened" (click)="sidenav.toggle()">Show Local Side Bar</button></p>
+    <p><button mat-raised-button *ngIf="!displayDemoStuff" (click)="showDemoStuff()">Show Demo Stuff</button></p>
 
 <div *ngIf="displayDemoStuff">
 
   <p>____________________________________________</p>
   <h2>DEMO STUFF</h2>
-  <p><button mat-button *ngIf="displayDemoStuff" (click)="hideDemoStuff()">Hide Demo Stuff</button></p>
+  <p><button mat-raised-button *ngIf="displayDemoStuff" (click)="hideDemoStuff()">Hide Demo Stuff</button></p>
 
 <ul>
- 
-
-<li class="demoItem2"><span class="badge">RADIO BUTTON: </span> Angular Material Radio Button Example.
-    <p>
-  <mat-radio-group aria-label="Select an option">
-  <mat-radio-button value="1">Option 1</mat-radio-button>
-  <mat-radio-button value="2">Option 2</mat-radio-button>
-</mat-radio-group>
-</p>
-  </li>
-  <br>
-  
+  <li class="demoItem1"><button type="button" class="btn btn-primary"> Single Button</button></li>
+<br>
 
 <li class="demoItem1"><span class="badge">SLIDERS: </span> Angular Material Slider Examples.  **REQUIRES HAMMER.JS **
     <p><mat-slider></mat-slider></p>
