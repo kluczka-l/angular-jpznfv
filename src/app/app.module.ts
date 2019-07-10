@@ -4,6 +4,10 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { DemoMaterialModule } from './material-module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+import { NgxSpinnerModule } from 'ngx-spinner';
+
+
 import { ElmModule } from '../elm/elm.module';
 
 import { AppComponent } from './app.component';
@@ -36,6 +40,7 @@ import { OtherDemoStuffComponent } from './other-demo-stuff/other-demo-stuff.com
     FormsModule,
     ButtonsModule.forRoot(),
     BrowserAnimationsModule,
+    NgxSpinnerModule,
     ElmModule,
     DemoMaterialModule,
     RouterModule.forRoot([
@@ -61,7 +66,7 @@ import { OtherDemoStuffComponent } from './other-demo-stuff/other-demo-stuff.com
 
       { path: 'app-other-demo-stuff', pathMatch: 'full', component: OtherDemoStuffComponent},
     ]) ],
-  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent, MaterialCheckboxDemoComponent, MaterialButtonDemoComponent, MaterialRadioButtonDemoComponent, MaterialDatePickerDemoComponent, NgxDemoComponent, NgxButtonDemoComponent, NgxDataPickerDemoComponent, NgxCheckboxDemoComponent, NgxRadioButtonDemoComponent, DemosComponent, NgxSpinner1DemoComponent, OtherDemoStuffComponent ],
+  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent, MaterialCheckboxDemoComponent, MaterialButtonDemoComponent, MaterialRadioButtonDemoComponent, MaterialDatePickerDemoComponent, NgxDemoComponent, NgxButtonDemoComponent, NgxDataPickerDemoComponent, NgxCheckboxDemoComponent, NgxRadioButtonDemoComponent, DemosComponent, NgxSpinner1DemoComponent, OtherDemoStuffComponent,  ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

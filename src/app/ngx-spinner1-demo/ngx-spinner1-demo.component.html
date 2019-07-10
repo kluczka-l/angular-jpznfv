@@ -1,3 +1,16 @@
-<p>
-ngx-spinner1-demo works!
-</p>
+<h3>NGX Spinner Demo</h3>
+<div class="container">
+  <button mat-raised-button (click)="showSpinner('sp1')">ball-clip-rotate-multiple</button>
+  <button mat-raised-button (click)="showSpinner('sp2')">ball-fussion</button>
+  <button mat-raised-button (click)="showSpinner('sp3')">Show ball-spin-clockwise</button>
+  <button mat-raised-button (click)="showSpinner('sp4')">cog</button>
+  <button mat-raised-button (click)="showSpinner('sp5')">square-jelly-box</button>
+  <button mat-raised-button (click)="showSpinner('sp6')">timer</button>
+
+  <ngx-spinner name="sp1" [fullScreen]="false" type="ball-clip-rotate-multiple" size="medium"></ngx-spinner>
+  <ngx-spinner name="sp2" [fullScreen]="false" type="ball-fussion" size="medium"></ngx-spinner>
+  <ngx-spinner name="sp3" [fullScreen]="false" type="ball-spin-clockwise" size="medium"></ngx-spinner>
+  <ngx-spinner name="sp4" [fullScreen]="false" type="cog" size="medium"></ngx-spinner>
+  <ngx-spinner name="sp5" [fullScreen]="false" type="square-jelly-box" size="medium"></ngx-spinner>
+  <ngx-spinner name="sp6" [fullScreen]="false" type="timer" size="medium"></ngx-spinner>
+</div>
