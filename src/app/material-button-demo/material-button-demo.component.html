@@ -2,15 +2,26 @@
 ANGULAR MATERIAL BUTTON
 </h1>
 <ul>
-  <li><span class="badge">Basic Native Button:</span> &lt;button mat-button&gt;Click me!&lt;/button&gt;
+  <li>
+    <span class="badge">Basic Angular Material "Native Button":</span> &lt;button mat-button&gt;Click me!&lt;/button&gt;
+    <p>Recommendation: A &lt;button&gt; element should be used whenever some action is performed.</p>
     <p class="materialDemoItem">
       <button mat-button>mat-button</button>
       <button mat-raised-button>mat-raised-button</button>
       <button mat-flat-button>mat-flat-button</button>
-      <button mat-button>mat-button</button>
+      <button mat-stroked-button>mat-stroked-button</button>
+      <button mat-icon-button><mat-icon>home</mat-icon></button>(mat-icon-button)
+      <button mat-fab-button><mat-icon>home</mat-icon></button>(mat-fab-button)
+      <button mat-mini-fab-button><mat-icon>home</mat-icon></button>(mat-mini-fab-button)
     </p>
   </li>
-  
+  <li>
+    <span class="badge">Basic Angular Material "Native Navigation Button":</span> &lt;a mat-raised-button routerLink="/amd"&gt;Click me!&lt;/a&gt;
+    <p>Recommendation: An &lt;a&gt; element should be used whenever the user will navigate to another view.</p>
+    <p class="materialDemoItem">
+      <a mat-raised-button routerLink="/amd">Return To Angular Material Demo</a>
+    </p>
+  </li>
 </ul>
 
-<a routerLink="/amd">Return To Angular Material Demo</a>
+<a mat-raised-button routerLink="/amd">Return To Angular Material Demo</a>
