@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Hero, heroes } from '../hero';
+
 
 @Component({
   selector: 'home',
@@ -12,7 +12,6 @@ export class HomeComponent implements OnInit {
   highlightColor: string;
   displayDemoStuff = false;
   showSad: boolean = false;
-  heroes = heroes;
 
   constructor() { }
 

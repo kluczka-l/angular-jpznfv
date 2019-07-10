@@ -1,7 +1,7 @@
 <mat-sidenav-container>
 	<mat-sidenav #sidenav mode="side" [(opened)]="localSidenavOpened">
 		Side Bar Content Here
-		<p><button mat-button *ngIf="localSidenavOpened" (click)="sidenav.toggle()">Hide Local Side Bar</button></p>
+		<p><button mat-raised-button *ngIf="localSidenavOpened" (click)="sidenav.toggle()">Hide Local Side Bar</button></p>
   </mat-sidenav>
 
   <mat-sidenav-content>
@@ -12,82 +12,21 @@
       <li>Sidebar: In Progress</li>
       <li>Content Pages:</li>
         <ul>
-          <li appHighlight><a routerLink="/">Home Example:</a> In Progress</li>
-          <li appHighlight><a routerLink="/cards">Cards Example:</a> In Progress</li>
           <li appHighlight><a routerLink="/aoi">AOI Management Page:</a> To Do</li>
-          <li appHighlight><a routerLink="/demos">Demo Selection Page:</a> To Do</li>
           <li>Other Content Pages: To Do</li>
+          <li appHighlight><a routerLink="/demos">Demo Selection Page:</a></li>
         </ul>
     </ul>
 
     <p><button mat-raised-button *ngIf="!localSidenavOpened" (click)="sidenav.toggle()">Show Local Side Bar</button></p>
-    <p><button mat-raised-button *ngIf="!displayDemoStuff" (click)="showDemoStuff()">Show Demo Stuff</button></p>
+    <p><button mat-raised-button *ngIf="!displayDemoStuff" (click)="showDemoStuff()">Show Some Stuff</button></p>
 
 <div *ngIf="displayDemoStuff">
 
   <p>____________________________________________</p>
-  <h2>DEMO STUFF</h2>
-  <p><button mat-raised-button *ngIf="displayDemoStuff" (click)="hideDemoStuff()">Hide Demo Stuff</button></p>
+  <h2>Some STUFF</h2>
+  <p><button mat-raised-button *ngIf="displayDemoStuff" (click)="hideDemoStuff()">Hide Some Stuff</button></p>
 
-<ul>
-  <li class="demoItem1"><button type="button" class="btn btn-primary"> Single Button</button></li>
-<br>
-
-<li class="demoItem1"><span class="badge">SLIDERS: </span> Angular Material Slider Examples.  **REQUIRES HAMMER.JS **
-    <p><mat-slider></mat-slider></p>
-    <p><mat-slider tickInterval="auto"></mat-slider></p>
-    <p> <mat-slider
-  thumbLabel
-  [displayWith]="formatLabel"
-  tickInterval="1000"
-  min="1"
-  max="10000"></mat-slider> </p>
-  </li>
-  <br>
-
-
-
-
-  <li class="demoItem2"><span class="badge">HIGHLIGHT ON HOVER:</span> Highlighting of text on hover provided by an Attributue Directive defined in another NgModule where the highlight color is provided by the calling component.
-    <div >
-      <h4>Examine default highlights then pick a highlight color</h4>
-      <div>
-        <input type="radio" name="colors" (click)="highlightColor='lightgreen'">Green
-        <input type="radio" name="colors" (click)="highlightColor='yellow'">Yellow
-        <input type="radio" name="colors" (click)="highlightColor='cyan'">Cyan
-      </div>
-      <p [elmHighlight]="highlightColor">HIGHLIGHT ON HOVER TEXT</p>
-      <p [elmHighlight]="highlightColor" defaultColor="violet">HIGHLIGHT ON HOVER TEXT (has hard-coded caller specified default)</p>
-    </div>
-    </li>
-    <br>
-    <li class="demoItem1"><span class="badge">PICKLIST:</span> Pick list filtered by attribute 'emotion' of the list item.
-      <div >
-      <div>
-        Pick your favorite hero
-        (<label><input type="checkbox" checked (change)="showSad = !showSad">show sad</label>)
-       
-      </div>
-  
-      <select [(ngModel)]="hero">
-      <ng-container *ngFor="let h of heroes">
-       <ng-container *ngIf="!showSad || h.emotion !== 'sad'">
-        <option [ngValue]="h">{{h.name}} ({{h.emotion}})</option>
-        </ng-container>
-      </ng-container>
-      </select>
-      <p>Selected Item = {{ hero ? hero.name : 'No one yet' }} </p>
-    </div>
-
-
-
-
-
-
-    </li>
-</ul>
-
-  
 
 
 </div>

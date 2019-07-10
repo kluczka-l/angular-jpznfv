@@ -19,7 +19,7 @@ import { MaterialButtonDemoComponent } from './material-button-demo/material-but
 import { MaterialRadioButtonDemoComponent } from './material-radio-button-demo/material-radio-button-demo.component';
 import { MaterialDatePickerDemoComponent } from './material-date-picker-demo/material-date-picker-demo.component';
 
-
+//import { NgxSpinnerModule } from "ngx-spinner";
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { NgxDemoComponent } from './ngx-demo/ngx-demo.component';
 import { NgxButtonDemoComponent } from './ngx-button-demo/ngx-button-demo.component';
@@ -27,8 +27,8 @@ import { NgxDataPickerDemoComponent } from './ngx-data-picker-demo/ngx-data-pick
 import { NgxCheckboxDemoComponent } from './ngx-checkbox-demo/ngx-checkbox-demo.component';
 import { NgxRadioButtonDemoComponent } from './ngx-radio-button-demo/ngx-radio-button-demo.component';
 import { DemosComponent } from './demos/demos.component';
-
 import { NgxSpinner1DemoComponent } from './ngx-spinner1-demo/ngx-spinner1-demo.component';
+import { OtherDemoStuffComponent } from './other-demo-stuff/other-demo-stuff.component';
 
 @NgModule({
   imports:      [ 
@@ -58,8 +58,10 @@ import { NgxSpinner1DemoComponent } from './ngx-spinner1-demo/ngx-spinner1-demo.
       { path: 'app-ngx-date-picker-demo', pathMatch: 'full', component: NgxDataPickerDemoComponent},
 
       { path: 'app-ngx-spinner1-demo', pathMatch: 'full', component: NgxSpinner1DemoComponent},
+
+      { path: 'app-other-demo-stuff', pathMatch: 'full', component: OtherDemoStuffComponent},
     ]) ],
-  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent, MaterialCheckboxDemoComponent, MaterialButtonDemoComponent, MaterialRadioButtonDemoComponent, MaterialDatePickerDemoComponent, NgxDemoComponent, NgxButtonDemoComponent, NgxDataPickerDemoComponent, NgxCheckboxDemoComponent, NgxRadioButtonDemoComponent, DemosComponent, NgxSpinner1DemoComponent ],
+  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent, MaterialCheckboxDemoComponent, MaterialButtonDemoComponent, MaterialRadioButtonDemoComponent, MaterialDatePickerDemoComponent, NgxDemoComponent, NgxButtonDemoComponent, NgxDataPickerDemoComponent, NgxCheckboxDemoComponent, NgxRadioButtonDemoComponent, DemosComponent, NgxSpinner1DemoComponent, OtherDemoStuffComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

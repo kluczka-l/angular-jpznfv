@@ -1,0 +1,54 @@
+<p>
+other-demo-stuff works!
+</p>
+<ul>
+
+<li class="demoItem1"><span class="badge">SLIDERS: </span> Angular Material Slider Examples.  **REQUIRES HAMMER.JS **
+    <p><mat-slider></mat-slider></p>
+    <p><mat-slider tickInterval="auto"></mat-slider></p>
+    <p> <mat-slider
+  thumbLabel
+  [displayWith]="formatLabel"
+  tickInterval="1000"
+  min="1"
+  max="10000"></mat-slider> </p>
+  </li>
+  <br>
+
+
+
+
+  <li class="demoItem2"><span class="badge">HIGHLIGHT ON HOVER:</span> Highlighting of text on hover provided by an Attributue Directive defined in another NgModule where the highlight color is provided by the calling component.
+    <div >
+      <h4>Examine default highlights then pick a highlight color</h4>
+      <div>
+        <input type="radio" name="colors" (click)="highlightColor='lightgreen'">Green
+        <input type="radio" name="colors" (click)="highlightColor='yellow'">Yellow
+        <input type="radio" name="colors" (click)="highlightColor='cyan'">Cyan
+      </div>
+      <p [elmHighlight]="highlightColor">HIGHLIGHT ON HOVER TEXT</p>
+      <p [elmHighlight]="highlightColor" defaultColor="violet">HIGHLIGHT ON HOVER TEXT (has hard-coded caller specified default)</p>
+    </div>
+    </li>
+    <br>
+    <li class="demoItem1"><span class="badge">PICKLIST:</span> Pick list filtered by attribute 'emotion' of the list item.
+      <div >
+      <div>
+        Pick your favorite hero
+        (<label><input type="checkbox" checked (change)="showSad = !showSad">show sad</label>)
+       
+      </div>
+  
+      <select [(ngModel)]="hero">
+      <ng-container *ngFor="let h of heroes">
+       <ng-container *ngIf="!showSad || h.emotion !== 'sad'">
+        <option [ngValue]="h">{{h.name}} ({{h.emotion}})</option>
+        </ng-container>
+      </ng-container>
+      </select>
+      <p>Selected Item = {{ hero ? hero.name : 'No one yet' }} </p>
+    </div>
+
+    </li>
+</ul>
+<a mat-raised-button routerLink="/demos">Return To Demo Selection Page</a>
