@@ -35,6 +35,7 @@ import { NgxSpinner1DemoComponent } from './ngx-spinner1-demo/ngx-spinner1-demo.
 import { OtherDemoStuffComponent } from './other-demo-stuff/other-demo-stuff.component';
 import { MaterialProgressBarDemoComponent } from './material-progress-bar-demo/material-progress-bar-demo.component';
 import { MaterialRippleDemoComponent } from './material-ripple-demo/material-ripple-demo.component';
+import { ReadJsonDemoComponent } from './ioDemos/read-json-demo/read-json-demo.component';
 
 @NgModule({
   imports:      [ 
@@ -69,8 +70,11 @@ import { MaterialRippleDemoComponent } from './material-ripple-demo/material-rip
       { path: 'app-ngx-spinner1-demo', pathMatch: 'full', component: NgxSpinner1DemoComponent},
 
       { path: 'app-other-demo-stuff', pathMatch: 'full', component: OtherDemoStuffComponent},
+
+      { path: 'ioDemos/app-read-json-demo', pathMatch: 'full', component: ReadJsonDemoComponent},
+
     ]) ],
-  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent, MaterialCheckboxDemoComponent, MaterialButtonDemoComponent, MaterialRadioButtonDemoComponent, MaterialDatePickerDemoComponent, NgxDemoComponent, NgxButtonDemoComponent, NgxDataPickerDemoComponent, NgxCheckboxDemoComponent, NgxRadioButtonDemoComponent, DemosComponent, NgxSpinner1DemoComponent, OtherDemoStuffComponent, MaterialProgressBarDemoComponent, MaterialRippleDemoComponent,  ],
+  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent, MaterialCheckboxDemoComponent, MaterialButtonDemoComponent, MaterialRadioButtonDemoComponent, MaterialDatePickerDemoComponent, NgxDemoComponent, NgxButtonDemoComponent, NgxDataPickerDemoComponent, NgxCheckboxDemoComponent, NgxRadioButtonDemoComponent, DemosComponent, NgxSpinner1DemoComponent, OtherDemoStuffComponent, MaterialProgressBarDemoComponent, MaterialRippleDemoComponent, ReadJsonDemoComponent,  ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
