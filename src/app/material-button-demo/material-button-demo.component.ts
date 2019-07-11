@@ -13,6 +13,7 @@ centered = false;
    unbounded = false;
    radius: number;
    color: string;
+   
   constructor() { }
 
   ngOnInit() {
