@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   @Input() siteName: string;
-  localSidenavOpened = true;
+  localSidenavOpened = false;
   highlightColor: string;
   displayDemoStuff = false;
   showSad: boolean = false;

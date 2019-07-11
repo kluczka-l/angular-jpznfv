@@ -1,0 +1,49 @@
+{
+  "version": {
+    "build": "1",
+    "date": "2019-06-17T12:24:48Z",
+    "number": "1.0.0-beta"
+  },
+  "classification": {
+    "level": "UNCLASSIFIED//FOUO",
+    "bg-color": "green",
+    "fg-color": "white"
+  },
+  "menu": [{
+      "name": "HOME",
+      "link": "/",
+      "icon": "home",
+      "subs": ["Option 1"]
+    },
+    {
+      "name": "NEWS",
+      "link": "",
+      "icon": "event_note",
+      "subs": ["Option 1", "Option 2"]
+    },
+    {
+      "name": "CREATIVITY",
+      "link": "",
+      "icon": "shutter_speed",
+      "subs": ["Option 1", "Option 2", "Option 3"]
+    },
+    {
+      "name": "IMPACT",
+      "link": "",
+      "icon": "local_pharmacy",
+      "subs": ["Option 1", "Option 2", "Option 3"]
+    },
+    {
+      "name": "UTILITIES",
+      "link": "/utilities",
+      "icon": "bug_report",
+      "subs": ["Option 1", "Option 2"]
+    },
+    {
+      "name": "SUBSCRIBE",
+      "link": "",
+      "icon": "unsubscribe",
+      "subs": ["Option 1"]
+    }
+  ]
+}

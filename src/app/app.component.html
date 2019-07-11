@@ -9,8 +9,6 @@
         <div>
         <ul>
           <li><a routerLink="/" title="Home Page"><mat-icon>home</mat-icon></a></li>
-          <li><a routerLink="/aoi" title="AOI Management Page">AOI Management</a></li>
-          <li><a routerLink="/demos" title="Demo Selection Page">Demo</a></li>
         </ul>
         </div>
       </nav>
@@ -19,7 +17,17 @@
     <mat-sidenav-container >
       <mat-sidenav #snav mode="side">
         <mat-nav-list>
+          <button mat-button disableRipple class="d-block w-100" color="primary" 
+            *ngFor="let menu of minimalOptions" [disabled]="menu.disabled" [routerLink]="menu.link">
+        <mat-icon>{{ menu.icon }}</mat-icon>
+        <small class="d-block">{{ menu.name }}</small>
+      </button>
           <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a>
+
+
+
+
+
        </mat-nav-list>
       </mat-sidenav>
       <mat-sidenav-content>
