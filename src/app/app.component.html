@@ -1,10 +1,8 @@
 <div class="app-container">
 	<mat-toolbar color="primary" class="topbar-toolbar">
-		  <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
-      <img [src]="topbarImageUrl" width="70" height="70"> 
-      <a [routerLink]="['/']">
-        <h1 class="topbar-app-name">{{siteName}}</h1>
-      </a>
+		  <button mat-icon-button (click)="snav.toggle()" ><mat-icon>menu</mat-icon></button>
+      <a [routerLink]="['/']"><img [src]="topbarImageUrl"  height="45px" title="Home"> </a>
+      
       <nav class="topbar-nav">
         <div>
         <ul>

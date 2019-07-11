@@ -7,9 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  siteName = '';
-
-  isMinimal = true;
+ 
   minimalOptions = [
     { name: 'HOME', link: '/', icon: 'home', disabled: false, subs: [ 'Option 1' ] },
     { name: 'NEWS', link: '', icon: 'event_note', disabled: true, subs: [ 'Option 1', 'Option 2' ] },
@@ -19,9 +17,8 @@ export class AppComponent  {
     { name: 'SUBSCRIBE', link: '', icon: 'unsubscribe', disabled: true, subs: [ 'Option 1' ] },
     { name: 'DEMO', link: '/demos', icon: 'more_horiz', disabled: false, subs: [ 'Option 1' ] }
   ];
-
  
-  topbarImageUrl = "https://lockheedmartin.com/content/dam/lockheed-martin/general/LM-logo.svg";
+    topbarImageUrl = "https://lockheedmartin.com/content/dam/lockheed-martin/general/LM-logo.svg";
   
-  fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
+  fillerNav = Array.from({length: 10}, (_, i) => `Nav Item ${i + 1}`);
 }
