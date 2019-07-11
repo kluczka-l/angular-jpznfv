@@ -1,22 +1,116 @@
-<h1>
+<h3 title="Angular Material button module MatButtonModule(mat-button,mat-raised-button,mat-icon-button,mat-fab,mat-mini-fab) enhances the user experience of normal buttons (&lt;button&gt;) and anchor (&lt;a&gt;) tags by following Material design principles.
+
+When you want to perform an action in webpage use button and use an anchor tag to navigate to other pages. References: https://www.angularjswiki.com/angular/buttons-in-angular-using-material-design-mat-button-example/#mat-flat-button-example">
 ANGULAR MATERIAL BUTTON
-</h1>
+</h3>
+
 <ul>
   <li>
-    <span class="badge">Basic Angular Material "Native Button":</span> &lt;button mat-button&gt;Click me!&lt;/button&gt;
-    <p>Recommendation: A &lt;button&gt; element should be used whenever some action is performed.</p>
-    <p class="materialDemoItem">
-      <button mat-button>mat-button</button>
-      <button mat-raised-button>mat-raised-button</button>
-      <button mat-flat-button>mat-flat-button</button>
-      <button mat-stroked-button>mat-stroked-button</button>
-      <button mat-icon-button><mat-icon>home</mat-icon></button>(mat-icon-button)
-      <button mat-fab-button><mat-icon>home</mat-icon></button>(mat-fab-button)
-      <button mat-mini-fab-button><mat-icon>home</mat-icon></button>(mat-mini-fab-button)
-    </p>
+    <span class="badge">Basic Angular Material "Native Button":</span> 
+    <p>Recommendation: A &lt;button&gt; element should be used to request an action be performed.</p>
+    <ul>
+      <li><span class="badge">mat-button</span> Basic Text Button
+        <p class="materialDemoItem">
+            <button mat-button>Basic</button>
+            <button mat-button color="primary">Primary</button>
+            <button mat-button color="accent">Accent</button>
+            <button mat-button color="warn">Warn</button>
+            <button mat-button disabled>Disabled</button>
+            <button mat-button disableRipple=true>disableRipple</button>
+          </p>
+      </li>
+    </ul>
+    <ul>
+      <li><span class="badge">mat-flat-button</span> 'Contained Button' with fill color.
+        <p class="materialDemoItem">
+            <button mat-flat-button>Basic</button>
+            <button mat-flat-button color="primary">Primary</button>
+            <button mat-flat-button color="accent">Accent</button>
+            <button mat-flat-button color="warn">Warn</button>
+            <button mat-flat-button disabled>Disabled</button>
+            <button mat-flat-button disableRipple=true>disableRipple</button>
+          </p>
+      </li>
+    </ul>
+    <ul>
+      <li><span class="badge" title="mat-raised-button is a contained button filled with color and has shadow. And has more visibility than flat button. Can be use it in place of mat-flat-button to represent primary action in the web page.">mat-raised-button </span> 'Contained Button' with fill color and shading.
+        <p class="materialDemoItem">
+            <button mat-raised-button>Basic</button>
+            <button mat-raised-button color="primary">Primary</button>
+            <button mat-raised-button color="accent">Accent</button>
+            <button mat-raised-button color="warn">Warn</button>
+            <button mat-raised-button disabled>Disabled</button>
+            <button mat-raised-button disableRipple=true>disableRipple</button>
+          </p>
+      </li>
+    </ul>
+    <ul>
+      <li><span class="badge">mat-stroked-button</span> 'Outlined Button' with colored text.
+        <p class="materialDemoItem">
+           <button mat-stroked-button>Basic</button>
+<button mat-stroked-button color="primary">Primary</button>
+<button mat-stroked-button color="accent">Accent</button>
+<button mat-stroked-button color="warn">Warn</button>
+<button mat-stroked-button disabled>Disabled</button>
+<button mat-stroked-button disableRipple=true>disableRipple</button>
+          </p>
+      </li>
+    </ul>
+        <ul>
+      <li><span class="badge">mat-icon-button</span> 
+        <p class="materialDemoItem">
+           <button mat-icon-button>
+<mat-icon>shopping_cart</mat-icon>
+</button>
+<button mat-icon-button color="primary">
+<mat-icon>shopping_cart</mat-icon>
+</button>
+<button mat-icon-button color="accent">
+<mat-icon>shopping_cart</mat-icon>
+</button>
+<button mat-icon-button color="warn">
+<mat-icon>shopping_cart</mat-icon>
+</button>
+<button mat-icon-button disabled>
+<mat-icon>shopping_cart</mat-icon>
+</button>
+<button mat-icon-button disableRipple=true>
+<mat-icon>shopping_cart</mat-icon>
+</button>
+          </p>
+      </li>
+    </ul>
+        <ul>
+      <li><span class="badge">mat-fab-button</span> 'Contained Button' with color.
+        <p class="materialDemoItem">
+           <button mat-fab><mat-icon>add</mat-icon></button>
+<button mat-fab color="primary"><mat-icon>add</mat-icon></button>
+<button mat-fab color="accent"><mat-icon>add</mat-icon></button>
+<button mat-fab color="warn"><mat-icon>add</mat-icon></button>
+<button mat-fab disabled><mat-icon>add</mat-icon></button>
+<button mat-fab disableRipple=true>
+<mat-icon>add</mat-icon>
+</button>
+          </p>
+      </li>
+    </ul>
+        <ul>
+      <li><span class="badge">mat-minifab-button</span> 'Contained Button' with color.
+        <p class="materialDemoItem">
+           <button mat-mini-fab><mat-icon>add</mat-icon></button>
+<button mat-mini-fab color="primary"><mat-icon>add</mat-icon></button>
+<button mat-mini-fab color="accent"><mat-icon>add</mat-icon></button>
+<button mat-mini-fab color="warn"><mat-icon>add</mat-icon></button>
+<button mat-mini-fab disabled><mat-icon>add</mat-icon></button>
+<button mat-mini-fab disableRipple=true>
+<mat-icon>add</mat-icon>
+</button>
+          </p>
+      </li>
+    </ul>
   </li>
   <li>
-    <span class="badge">Basic Angular Material "Native Navigation Button":</span> &lt;a mat-raised-button routerLink="/amd"&gt;Click me!&lt;/a&gt;
+    <span class="badge">Basic Angular Material "Native Button Anchor":</span> &lt;a mat-raised-button routerLink="/amd"&gt;Click me!&lt;/a&gt;
     <p>Recommendation: An &lt;a&gt; element should be used whenever the user will navigate to another view.</p>
     <p class="materialDemoItem">
       <a mat-raised-button routerLink="/amd">Return To Angular Material Demo</a>
@@ -31,6 +125,41 @@ ANGULAR MATERIAL BUTTON
         <mat-button-toggle value="underline">Three</mat-button-toggle>
       </mat-button-toggle-group>
     </p>
+  </li>
+  <li>
+    <span class="badge">Button Focusing:</span>
+    <p class="materialDemoItem">
+<mat-checkbox
+(change)="changeEvent($event)"></mat-checkbox> Check this box to put button below in focus.
+<br/> 
+(On Change event focuses the button)
+<button mat-button #submitButton color="primary">Basic</button>
+</p>
+  </li>
+<li>
+    <span class="badge">Ripple:</span>
+    <div class="materialDemoItem">
+<mat-list role="list" matRipple>
+  <mat-list-item role="listitem">Item 1</mat-list-item>
+  <mat-list-item role="listitem">Item 2</mat-list-item>
+  <mat-list-item role="listitem">Item 3</mat-list-item>
+</mat-list>
+<button mat-raised-button color="accent" (click)="triggerRipple()">Trigger Ripple</button>
+
+    </div>
+  </li>
+
+<li>
+    <span class="badge">Ripple:</span> Ripple color = green.  Button with icon and
+    <div class="materialDemoItem">
+<button matRipple [matRippleColor]="rippleColor" type="submit" class="submit-button">
+    <mat-icon>search</mat-icon><span>Search</span>
+</button>
+</div>
+  </li>
 </ul>
+
+
+<br>
 
 <a mat-raised-button routerLink="/amd">Return To Angular Material Demo</a>

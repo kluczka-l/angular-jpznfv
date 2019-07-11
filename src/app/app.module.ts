@@ -33,6 +33,8 @@ import { NgxRadioButtonDemoComponent } from './ngx-radio-button-demo/ngx-radio-b
 import { DemosComponent } from './demos/demos.component';
 import { NgxSpinner1DemoComponent } from './ngx-spinner1-demo/ngx-spinner1-demo.component';
 import { OtherDemoStuffComponent } from './other-demo-stuff/other-demo-stuff.component';
+import { MaterialProgressBarDemoComponent } from './material-progress-bar-demo/material-progress-bar-demo.component';
+import { MaterialRippleDemoComponent } from './material-ripple-demo/material-ripple-demo.component';
 
 @NgModule({
   imports:      [ 
@@ -55,6 +57,8 @@ import { OtherDemoStuffComponent } from './other-demo-stuff/other-demo-stuff.com
       { path: 'app-material-button-demo', pathMatch: 'full', component: MaterialButtonDemoComponent},
       { path: 'app-material-radio-button-demo', pathMatch: 'full', component: MaterialRadioButtonDemoComponent},
       { path: 'app-material-date-picker-demo', pathMatch: 'full', component: MaterialDatePickerDemoComponent},
+      { path: 'app-material-progress-bar-demo', pathMatch: 'full', component: MaterialProgressBarDemoComponent},
+      { path: 'app-material-ripple-demo', pathMatch: 'full', component: MaterialRippleDemoComponent},
 
       { path: 'ngxb', pathMatch: 'full', component: NgxDemoComponent},
       { path: 'app-ngx-checkbox-demo', pathMatch: 'full', component: NgxCheckboxDemoComponent},
@@ -66,7 +70,7 @@ import { OtherDemoStuffComponent } from './other-demo-stuff/other-demo-stuff.com
 
       { path: 'app-other-demo-stuff', pathMatch: 'full', component: OtherDemoStuffComponent},
     ]) ],
-  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent, MaterialCheckboxDemoComponent, MaterialButtonDemoComponent, MaterialRadioButtonDemoComponent, MaterialDatePickerDemoComponent, NgxDemoComponent, NgxButtonDemoComponent, NgxDataPickerDemoComponent, NgxCheckboxDemoComponent, NgxRadioButtonDemoComponent, DemosComponent, NgxSpinner1DemoComponent, OtherDemoStuffComponent,  ],
+  declarations: [ AppComponent, KardComponent, CardsComponent, HomeComponent, AoiManagementComponent, MaterialDemoComponent, MaterialDesignInfoComponent, MaterialCheckboxDemoComponent, MaterialButtonDemoComponent, MaterialRadioButtonDemoComponent, MaterialDatePickerDemoComponent, NgxDemoComponent, NgxButtonDemoComponent, NgxDataPickerDemoComponent, NgxCheckboxDemoComponent, NgxRadioButtonDemoComponent, DemosComponent, NgxSpinner1DemoComponent, OtherDemoStuffComponent, MaterialProgressBarDemoComponent, MaterialRippleDemoComponent,  ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
